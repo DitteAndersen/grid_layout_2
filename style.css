@@ -1,0 +1,43 @@
+/* Nulstilling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Billeder */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Grid-container til desktop */
+.grid-container {
+  background-color: #ffffff;
+  padding: 130px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 kolonner */
+  gap: 20px;
+}
+
+/* Grid-items (boksene) */
+.grid-item {
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* --- MOBIL --- */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* én kolonne på mobil */
+    padding: 20px; /* mindre padding så det passer på mobil */
+  }
+
+  .grid-item {
+    font-size: 18px; /* mindre tekst, bedre læsbarhed */
+  }
+}
